@@ -5,7 +5,37 @@
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
 }
+:root {
+  --operator-bg-color: #de9376;
+  --border-radius: 8px;
+  --button-padding: 10px;
+  --btn-bg-color: rgb(223, 218, 218);
+  --font-size: 25px;
+  --font-weight: 700;
+}
 body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .calculator {
+  max-width: 600px;
+  padding: 1rem;
+  border: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.btn {
+  padding: 15px;
+  width: 4rem;
+  border-radius: var(--border-radius);
+  border: none;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
 }
