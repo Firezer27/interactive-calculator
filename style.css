@@ -25,6 +25,17 @@ body {
   border: none;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
+.display {
+  background-color: greenyellow;
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -38,4 +49,7 @@ body {
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
   font-size: var(--font-size);
   font-weight: var(--font-weight);
+}
+.btn:hover {
+  background-color: rgb(183, 188, 192);
 }
